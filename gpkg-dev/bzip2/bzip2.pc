@@ -1,5 +1,5 @@
-prefix=/data/data/com.termux/files/usr/glibc
-exec_prefix=/data/data/com.termux/files/usr/glibc
+prefix=/data/data/com.termux.x11/files/usr/glibc
+exec_prefix=/data/data/com.termux.x11/files/usr/glibc
 bindir=${exec_prefix}/bin
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

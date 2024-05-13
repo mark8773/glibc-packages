@@ -2,7 +2,7 @@
 Description=Kerberos 5 KDC
 
 [Service]
-ExecStart=/data/data/com.termux/files/usr/glibc/bin/krb5kdc -n
+ExecStart=/data/data/com.termux.x11/files/usr/glibc/bin/krb5kdc -n
 Restart=always
 
 [Install]

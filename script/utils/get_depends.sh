@@ -37,10 +37,10 @@ get_depends() {
 			fi
 			curl "${GPKG_DEV_REPO_URL}/${FILENAME}" -o /mnt/${FILENAME}
 			if [ "$i" = "glibc" ]; then
-				sudo -H -u ${GPKG_DEV_USER_NAME} tar xJf /mnt/${FILENAME} -C / data/data/com.termux/files/usr/glibc/lib
+				sudo -H -u ${GPKG_DEV_USER_NAME} tar xJf /mnt/${FILENAME} -C / data/data/com.termux.x11/files/usr/glibc/lib
 			elif [ "$i" = "binutils-glibc" ]; then
-				sudo -H -u ${GPKG_DEV_USER_NAME} tar xJf /mnt/${FILENAME} -C / data/data/com.termux/files/usr/glibc/lib
-				sudo -H -u ${GPKG_DEV_USER_NAME} tar xJf /mnt/${FILENAME} -C / data/data/com.termux/files/usr/glibc/bin
+				sudo -H -u ${GPKG_DEV_USER_NAME} tar xJf /mnt/${FILENAME} -C / data/data/com.termux.x11/files/usr/glibc/lib
+				sudo -H -u ${GPKG_DEV_USER_NAME} tar xJf /mnt/${FILENAME} -C / data/data/com.termux.x11/files/usr/glibc/bin
 			else
 				sudo -H -u ${GPKG_DEV_USER_NAME} tar xJf /mnt/${FILENAME} -C / data
 			fi

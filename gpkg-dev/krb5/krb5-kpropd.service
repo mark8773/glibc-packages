@@ -2,7 +2,7 @@
 Description=Kerberos 5 propagation server
 
 [Service]
-ExecStart=/data/data/com.termux/files/usr/glibc/bin/kpropd -S
+ExecStart=/data/data/com.termux.x11/files/usr/glibc/bin/kpropd -S
 
 [Install]
 WantedBy=multi-user.target

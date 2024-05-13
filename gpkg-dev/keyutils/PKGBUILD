@@ -9,7 +9,7 @@ pkgdesc='Linux Key Management Utilities'
 arch=(any)
 url='https://www.kernel.org/'
 license=('GPL2' 'LGPL2.1')
-backup=('data/data/com.termux/files/usr/glibc/etc/request-key.conf')
+backup=('data/data/com.termux.x11/files/usr/glibc/etc/request-key.conf')
 source=("git+https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git#tag=${_tag}"
         'request-key.conf.patch' 'reproducible.patch' 'Makefile.patch')
 sha256sums=('SKIP'

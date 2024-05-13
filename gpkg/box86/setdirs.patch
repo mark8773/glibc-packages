@@ -61,8 +61,8 @@ index cf3f35a..e9d59ec 100644
 +    if(FileExist("@TERMUX_PREFIX@/lib32", 0))
 +        AddPath("@TERMUX_PREFIX@/lib32", &context->box86_ld_lib, 1);
  #else
-     if(FileExist("/data/data/com.termux/files/usr/lib/i386-linux-gnu", 0))
-         AddPath("/data/data/com.termux/files/usr/lib/i386-linux-gnu", &context->box86_ld_lib, 1);
+     if(FileExist("/data/data/com.termux.x11/files/usr/lib/i386-linux-gnu", 0))
+         AddPath("/data/data/com.termux.x11/files/usr/lib/i386-linux-gnu", &context->box86_ld_lib, 1);
 @@ -1188,8 +1182,8 @@ void endBox86()
  static void load_rcfiles()
  {
@@ -72,8 +72,8 @@ index cf3f35a..e9d59ec 100644
 +    if(FileExist("@TERMUX_PREFIX@/etc/box86.box86rc", IS_FILE))
 +        LoadRCFile("@TERMUX_PREFIX@/etc/box86.box86rc");
      #else
-     if(FileExist("/data/data/com.termux/files/usr/etc/box86.box86rc", IS_FILE))
-         LoadRCFile("/data/data/com.termux/files/usr/etc/box86.box86rc");
+     if(FileExist("/data/data/com.termux.x11/files/usr/etc/box86.box86rc", IS_FILE))
+         LoadRCFile("/data/data/com.termux.x11/files/usr/etc/box86.box86rc");
 @@ -1268,7 +1262,7 @@ int main(int argc, const char **argv, char **env)
          printf("See 'box86 --help' for more information.\n");
          exit(0);

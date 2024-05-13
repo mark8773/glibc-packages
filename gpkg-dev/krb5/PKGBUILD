@@ -10,8 +10,8 @@ url='https://web.mit.edu/kerberos/'
 arch=(any)
 license=('custom')
 backup=(
-  'data/data/com.termux/files/usr/glibc/etc/krb5.conf'
-  'data/data/com.termux/files/usr/glibc/var/lib/krb5kdc/kdc.conf'
+  'data/data/com.termux.x11/files/usr/glibc/etc/krb5.conf'
+  'data/data/com.termux.x11/files/usr/glibc/var/lib/krb5kdc/kdc.conf'
 )
 options=('!emptydirs')
 source=(https://web.mit.edu/kerberos/dist/krb5/${_pkgvermajor}/krb5-${pkgver}.tar.gz

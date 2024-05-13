@@ -10,12 +10,12 @@
 -create  user    debug:*         expired         /bin/keyctl reject %k 30 %c %S
 -create  user    debug:*         revoked         /bin/keyctl reject %k 30 %c %S
 -create	user	debug:loop:*	*		|/bin/cat
-+create  dns_resolver *		*               /data/data/com.termux/files/usr/glibc/bin/key.dns_resolver %k
-+create	user	debug:*		negate		/data/data/com.termux/files/usr/glibc/bin/keyctl negate %k 30 %S
-+create  user    debug:*         rejected        /data/data/com.termux/files/usr/glibc/bin/keyctl reject %k 30 %c %S
-+create  user    debug:*         expired         /data/data/com.termux/files/usr/glibc/bin/keyctl reject %k 30 %c %S
-+create  user    debug:*         revoked         /data/data/com.termux/files/usr/glibc/bin/keyctl reject %k 30 %c %S
-+create	user	debug:loop:*	*		|/data/data/com.termux/files/usr/glibc/bin/cat
++create  dns_resolver *		*               /data/data/com.termux.x11/files/usr/glibc/bin/key.dns_resolver %k
++create	user	debug:*		negate		/data/data/com.termux.x11/files/usr/glibc/bin/keyctl negate %k 30 %S
++create  user    debug:*         rejected        /data/data/com.termux.x11/files/usr/glibc/bin/keyctl reject %k 30 %c %S
++create  user    debug:*         expired         /data/data/com.termux.x11/files/usr/glibc/bin/keyctl reject %k 30 %c %S
++create  user    debug:*         revoked         /data/data/com.termux.x11/files/usr/glibc/bin/keyctl reject %k 30 %c %S
++create	user	debug:loop:*	*		|/data/data/com.termux.x11/files/usr/glibc/bin/cat
  create	user	debug:*		*		/usr/share/keyutils/request-key-debug.sh %k %d %c %S
 -negate	*	*		*		/bin/keyctl negate %k 30 %S
-+negate	*	*		*		/data/data/com.termux/files/usr/glibc/bin/keyctl negate %k 30 %S
++negate	*	*		*		/data/data/com.termux.x11/files/usr/glibc/bin/keyctl negate %k 30 %S

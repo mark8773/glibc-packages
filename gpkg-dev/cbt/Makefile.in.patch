@@ -4,7 +4,7 @@
  	  --srcdir=$${topdir}/$$module_srcdir \
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias}  \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  || exit 1
  @endif ld
  
@@ -13,7 +13,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
 -	   \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGE1_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -21,7 +21,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGE2_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -29,7 +29,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGE3_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -37,7 +37,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGE4_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -45,7 +45,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGEprofile_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -53,7 +53,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGEtrain_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -61,7 +61,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGEfeedback_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -69,7 +69,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGEautoprofile_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  
@@ -77,7 +77,7 @@
  	  $(HOST_CONFIGARGS) --build=${build_alias} --host=${host_alias} \
  	  --target=${target_alias} \
  	  --with-build-libsubdir=$(HOST_SUBDIR) \
-+	  --with-lib-path="/data/data/com.termux/files/usr/glibc/lib:$(prefix)/lib" \
++	  --with-lib-path="/data/data/com.termux.x11/files/usr/glibc/lib:$(prefix)/lib" \
  	  $(STAGEautofeedback_CONFIGURE_FLAGS)
  @endif ld-bootstrap
  

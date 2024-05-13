@@ -5,14 +5,14 @@
  
  # Default native SYSTEM_HEADER_DIR, to be overridden by targets.
 -NATIVE_SYSTEM_HEADER_DIR = @NATIVE_SYSTEM_HEADER_DIR@
-+NATIVE_SYSTEM_HEADER_DIR = /data/data/com.termux/files/usr/glibc/include
++NATIVE_SYSTEM_HEADER_DIR = /data/data/com.termux.x11/files/usr/glibc/include
  # Default cross SYSTEM_HEADER_DIR, to be overridden by targets.
 -ifeq (@includedir@,$(prefix)/include)
 -  CROSS_SYSTEM_HEADER_DIR = @CROSS_SYSTEM_HEADER_DIR@
 -else
 -  CROSS_SYSTEM_HEADER_DIR = @includedir@
 -endif
-+CROSS_SYSTEM_HEADER_DIR = /data/data/com.termux/files/usr/glibc/include
++CROSS_SYSTEM_HEADER_DIR = /data/data/com.termux.x11/files/usr/glibc/include
  
  # autoconf sets SYSTEM_HEADER_DIR to one of the above.
  # Purge it of unnecessary internal relative paths
@@ -21,7 +21,7 @@
  gcc_tooldir = @gcc_tooldir@
  # Since gcc_tooldir does not exist at build-time, use -B$(build_tooldir)/bin/
 -build_tooldir = $(exec_prefix)/$(target_noncanonical)
-+build_tooldir = /data/data/com.termux/files/usr/glibc
++build_tooldir = /data/data/com.termux.x11/files/usr/glibc
  # Directory in which the compiler finds target-independent g++ includes.
  gcc_gxx_include_dir = @gcc_gxx_include_dir@
  gcc_gxx_include_dir_add_sysroot = @gcc_gxx_include_dir_add_sysroot@

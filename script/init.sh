@@ -2,7 +2,7 @@
 
 # system definitions
 export LANG="en_US.UTF-8"
-export DIR_TERMUX="/data/data/com.termux"
+export DIR_TERMUX="/data/data/com.termux.x11"
 export TERMUX_PREFIX="${DIR_TERMUX}/files/usr"
 export GLIBC_PREFIX="${TERMUX_PREFIX}/glibc"
 export GPKG_DEV_SERVER_URL="https://s3.amazonaws.com/termux-pacman.us"

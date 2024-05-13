@@ -18,7 +18,7 @@ index db33d9a..1870884 100644
 +        AddPath("@TERMUX_PREFIX@/x86_64-linux-gnu/lib", &context->box64_ld_lib, 1);
      #else
      //TODO: Add Termux Library Path - Lily
-     if(FileExist("/data/data/com.termux/files/usr/lib/x86_64-linux-gnu", 0))
+     if(FileExist("/data/data/com.termux.x11/files/usr/lib/x86_64-linux-gnu", 0))
 @@ -1426,8 +1424,8 @@ static void free_contextargv()
  static void load_rcfiles()
  {
@@ -28,8 +28,8 @@ index db33d9a..1870884 100644
 +    if(FileExist("@TERMUX_PREFIX@/etc/box64.box64rc", IS_FILE))
 +        LoadRCFile("@TERMUX_PREFIX@/etc/box64.box64rc");
      #else
-     if(FileExist("/data/data/com.termux/files/usr/etc/box64.box64rc", IS_FILE))
-         LoadRCFile("/data/data/com.termux/files/usr/etc/box64.box64rc");
+     if(FileExist("/data/data/com.termux.x11/files/usr/etc/box64.box64rc", IS_FILE))
+         LoadRCFile("/data/data/com.termux.x11/files/usr/etc/box64.box64rc");
 @@ -1459,7 +1457,7 @@ int main(int argc, const char **argv, char **env) {
          printf("See 'box64 --help' for more information.\n");
          exit(0);

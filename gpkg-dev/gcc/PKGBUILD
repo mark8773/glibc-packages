@@ -14,7 +14,7 @@ source=(https://ftp.gnu.org/gnu/gcc/gcc-$pkgver/gcc-$pkgver.tar.xz
         collect2.cc.patch
         gcc.cc.patch
         set_glibc_dynamic_linker.patch)
-_libdir=data/data/com.termux/files/usr/glibc/lib/gcc/$GPKG_DEV_TARGET/${pkgver%%+*}
+_libdir=data/data/com.termux.x11/files/usr/glibc/lib/gcc/$GPKG_DEV_TARGET/${pkgver%%+*}
 sha256sums=('e275e76442a6067341a27f04c5c6b83d8613144004c0413528863dc6b5c743da'
             'd87254ee2c816aee66b00dd5002966cf3fe9aca4969eaf160c47150583357790'
             '9ad6d475acf0b19ca0e420f32867c6a5186ffbae50481ec64a140165f8988b60'

@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/sh
+#!/data/data/com.termux.x11/files/usr/bin/sh
 fl="-std=c89"
 for opt; do
   case "$opt" in
